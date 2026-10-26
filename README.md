@@ -2,10 +2,7 @@
 
 A from-scratch VR mod for the native Linux version of **Hand of Fate 2**, built as a BepInEx 5 plugin.
 
-> [!WARNING]
-> **Vibe-coded.** This mod was written almost entirely by an AI (Claude, by Anthropic). The author describes what
-> they want and playtests it in the headset, but does not review the code line by line. Expect bugs and rough
-> edges, read the scripts before you run them, and back up your saves first. Use at your own risk.
+> **Disclaimer:** this is vibe coded and still in a rough state.
 
 - You sit or stand at the Dealer's table in first person and play the cards with your hands.
 - Fights are first person, with motion-controlled sword and shield.
