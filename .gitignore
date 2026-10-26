@@ -1,0 +1,7 @@
+build/
+logs/
+reference/
+downloads/
+backups/
+obj/
+bin/

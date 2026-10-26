@@ -1,0 +1,87 @@
+# Hand of Fate 2 VR - the Scenarios catalog (docs/scenarios.md). One scenario per line:
+#   Tab | Label | steps
+# Steps run in order, ';' between them: the mod's test-seam commands (as in the test harness) or the runner's own:
+#   @map            the dev run's dungeon map, ready for a jump (a fresh run from the base save if it isn't)
+#   @hub            the dev save at the challenge map (where a challenge and its deck are chosen)
+#   @fresh mid|hub  always a fresh dev save from that base
+#   @loadout        the weapon picked on the Fights tab (tab "Weapon") is equipped here
+#   @until <state> [s]   wait for a game state (part of its name), default 60 s
+#   @mapready       wait until the map takes jumps again
+#   @wait <s>       wait seconds
+#   @confirm        the encounter's card waits for Continue (A): pressed for the player
+#   @here           runs where the player is (no dev save needed): tools like the hand check
+# Labels show on the buttons: keep them short (about 16 letters). Tabs show in this order.
+# Every scenario runs in the dev save (Safety/DevProfile.cs): the player's own save is never written.
+
+# ---- the weapon for the fights (picked first, kept until changed): weapon, shield, artifact (the thrown / fired one) ----
+Weapon | Sword+shield+bomb | @map; equip BasicSword; @wait 0.8; equip BasicShield; @wait 0.8; equip bombBasic; @wait 0.8
+Weapon | Axe + crossbow    | @map; equip RustedAxe; @wait 0.8; equip BasicCrossbow; @wait 0.8
+Weapon | Hammer + pistol   | @map; equip HugeHammer; @wait 0.8; equip Pistol; @wait 0.8
+Weapon | Mace + meteor     | @map; equip SpikedMace; @wait 0.8; equip MeteorStrike; @wait 0.8
+Weapon | Staff + healing   | @map; equip ElvenStaff; @wait 0.8; equip HealingSpirits; @wait 0.8
+Weapon | Daggers + freeze  | @map; equip DuellingDaggers; @wait 0.8; equip bombFreeze; @wait 0.8
+Weapon | Deatharangs+stun  | @map; equip Deatharangs; @wait 0.8; equip bombStun; @wait 0.8
+Weapon | Sword+buckler+gun | @map; equip AdvancedSword; @wait 0.8; equip Buckler; @wait 0.8; equip Blunderbuss; @wait 0.8
+
+# ---- fights (the encounter's own arena; the enemies set by `fightwith`) ----
+Fights | Bandits          | @map; @loadout; fightwith ThievesThugREF*3; jump fight EL_Ambush_Thral; @confirm
+Fights | Shield bearers   | @map; @loadout; fightwith EmpireSoldierREF*2,EmpirePhalanxREF*1; jump fight EL_Ambush_Empire; @confirm
+Fights | Armoured         | @map; @loadout; fightwith NorseTankREF*2,CorruptedTankREF*1; jump fight EL_Ambush_Thral; @confirm
+Fights | Archers          | @map; @loadout; fightwith GoblinArcherREF*2,GoblinWarriorREF*1; jump fight EL_Ambush_Goblins; @confirm
+Fights | Bombs (lobbers)  | @map; @loadout; fightwith ThievesMolotovThrowerREF*2; jump fight EL_Ambush_Thral; @confirm
+Fights | Snares (bolas)   | @map; @loadout; fightwith NorseBolasREF*2,GoblinWarriorREF*1; jump fight EL_Ambush_Goblins; @confirm
+Fights | From behind      | @map; @loadout; fightwith ThievesAssassinREF*2; jump fight EL_Ambush_Thral; @confirm
+Fights | Goblin nabbers   | @map; @loadout; fightwith GoblinNabberREF*2,GoblinWarriorREF*1; jump fight EL_Ambush_Goblins; @confirm
+Fights | Every kind       | @map; @loadout; fightwith ThievesAssassinREF*1,GoblinNabberREF*1,GoblinArcherREF*1,EmpirePhalanxREF*1,CorruptedTankREF*1; jump fight EL_Ambush_Thral; @confirm
+Fights | Big crowd (10)   | @map; @loadout; fightwith ThievesThugREF*3,EmpireSoldierREF*2,GoblinArcherREF*2,NorseWarriorREF*2,CorruptedMinionREF*1; jump fight EL_Ambush_Thral; @confirm
+Fights | Exit portal      | @map; @loadout; fightwith ThievesThugREF*1; jump fight EL_Ambush_Thral; @confirm; @until Level_Play 120; @wait 2; killall
+Fights | You Died         | @map; @loadout; fightwith ThievesThugREF*2; jump fight EL_Ambush_Thral; @confirm; @until Level_Play 120; @wait 1; die
+
+# ---- bosses: the boss AIs in an ordinary arena, and real challenge ends (the Dealer's story first) ----
+Bosses | Shadow elder     | @map; @loadout; fightwith ShadowElderREF_boss*1; jump fight EL_Ambush_Thral; @confirm
+Bosses | Black knight     | @map; @loadout; fightwith SpecialBlackKnight_BossREF*1; jump fight EL_Ambush_Thral; @confirm
+Bosses | Wraith lovers    | @map; @loadout; fightwith Wraith_Lovers_bossREF*1; jump fight EL_Ambush_Thral; @confirm
+Bosses | Norse shaman     | @map; @loadout; fightwith NorseShamanBossREF*1; jump fight EL_Ambush_Thral; @confirm
+Bosses | Thief assassin   | @map; @loadout; fightwith ThievesAssassinBossREF*1; jump fight EL_Ambush_Thral; @confirm
+Bosses | Empire general   | @map; @loadout; fightwith EmpireGeneralTowerBossREF*1; jump fight EL_Ambush_Thral; @confirm
+Bosses | Hierophant (end) | @map; @loadout; jumpboss 05_Hierophant_End
+Bosses | Lovers (end)     | @map; @loadout; jumpboss 06_Lovers_End
+Bosses | Death (end)      | @map; @loadout; jumpboss 13_Death_End
+Bosses | Tower escape     | @map; @loadout; jumpboss 16_Tower_End
+Bosses | Trap level       | @map; @loadout; jumpboss Test_TrapLevels
+
+# ---- the Dealer's table: rewards and losses as the game deals them (its own cards), the end coins, its screens ----
+Table | Gain a weapon     | @map; gain RustedAxe
+Table | Gain a shield     | @map; gain BroadShield
+Table | Gain armour       | @map; gain HeavyArmour
+Table | Gain a helm       | @map; gain KnightsHelm
+Table | Gain an artifact  | @map; gain HealingSpirits
+Table | Random equipment  | @map; gain Equipment+1
+Table | Choose 1 of 3     | @map; gain Equipment+1From3
+Table | Gain gold         | @map; gain Gold+25
+Table | Lose gold         | @map; gain Gold-25
+Table | Gain food         | @map; gain Food+5
+Table | Lose food         | @map; gain Food-10
+Table | Gain life         | @map; gain Health+15
+Table | Max health up     | @map; gain MaxHealth+10
+# (Blessing and Curse: a blessing and a curse card themselves - in the dev run the fortune cards Blessing+1 / Curse+1 opened
+# an encounter as well (Captured Soldiers, Stranded Noble...), whose first option a Continue then picked: a fight)
+Table | Blessing          | @map; gain SecondWind
+Table | Curse             | @map; gain BadChef
+Table | End coins         | @map; wincoins
+Table | Shop              | @map; jump encounter Card_EN_Shoppe
+Table | Dialogue          | @map; jump encounter Card_EN_ForgottenDreams
+Table | Challenge map     | @hub
+
+# ---- the table's mini-games (the game's own tasks) ----
+Games | Choose a card     | @map; mg chance Easy
+Games | Pendulum          | @map; mg pendulum Medium
+Games | Wheel             | @map; mg wheel Easy
+Games | Wheel + nudge     | @map; mg wheel Easy nudge
+Games | Dice              | @map; mg dice 10
+
+# ---- places ----
+Places | Campfire (fight) | @map; @loadout; fightwith ThievesThugREF*1; jump fight EL_Ambush_Thral; @confirm
+Places | Title            | @map; title
+Places | Hand check       | @here; handcheck start
+Places | Fresh dev run    | @fresh mid

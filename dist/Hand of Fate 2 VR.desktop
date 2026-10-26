@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Hand of Fate 2 VR
+Comment=Hand of Fate 2 with the VR mod (connect the Quest in WiVRn first)
+Exec=@PLAY@
+Icon=steam_icon_456670
+Terminal=false
+Type=Application
+Categories=Game;X-WiVRn-VR;

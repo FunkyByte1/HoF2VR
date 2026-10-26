@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- BepInEx 5 plugin for Hand of Fate 2 (Unity 2017.4, legacy Mono / .NET 3.5 profile).
+       Compiles against the game's own mscorlib/System/UnityEngine so nothing newer than the
+       game's runtime can sneak in. Build: dotnet build -c Release (see scripts/build.sh). -->
+  <PropertyGroup>
+    <TargetFramework>net35</TargetFramework>
+    <AssemblyName>HoF2VR</AssemblyName>
+    <RootNamespace>HoF2VR</RootNamespace>
+    <Version>0.1.0</Version>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <DebugType>none</DebugType>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <NoWarn>$(NoWarn);MSB3644;MSB3270;CS0649;CS0169;CS0414</NoWarn>
+    <GameManaged>$(MSBuildThisFileDirectory)../../reference/managed</GameManaged>
+    <BepInExCore>$(MSBuildThisFileDirectory)../../downloads/bepinex/BepInEx/core</BepInExCore>
+    <OutputPath>$(MSBuildThisFileDirectory)../../build/bin/</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(GameManaged)/mscorlib.dll" Private="false" />
+    <Reference Include="$(GameManaged)/System.dll" Private="false" />
+    <Reference Include="$(GameManaged)/System.Core.dll" Private="false" />
+    <Reference Include="$(GameManaged)/UnityEngine*.dll" Exclude="$(GameManaged)/UnityEngine.UI.dll;$(GameManaged)/UnityEngine.Networking.dll;$(GameManaged)/UnityEngine.Timeline.dll;$(GameManaged)/UnityEngine.StandardEvents.dll" Private="false" />
+    <Reference Include="$(GameManaged)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="$(GameManaged)/Assembly-CSharp-firstpass.dll" Private="false" />
+    <Reference Include="$(BepInExCore)/BepInEx.dll" Private="false" />
+    <Reference Include="$(BepInExCore)/0Harmony.dll" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- the Dealer's recorded lines (DealerLines: only his are re-voiced or muted when the narration is on) -->
+    <EmbeddedResource Include="Narration/dealer_lines.txt" LogicalName="HoF2VR.dealer_lines.txt" />
+    <!-- the Scenarios menu (Diag/Scenarios.cs, docs/scenarios.md): its catalog and the dev save's base profiles -->
+    <EmbeddedResource Include="Diag/scenarios.txt" LogicalName="HoF2VR.scenarios.txt" />
+    <EmbeddedResource Include="Diag/dev_mid.profile" LogicalName="HoF2VR.dev_mid.profile" />
+    <EmbeddedResource Include="Diag/dev_hub.profile" LogicalName="HoF2VR.dev_hub.profile" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+# Combat Stage 2 item 9: every HoF2 enemy family mapped to the Until You Fall enemy it fights like (docs/uyf-reference.md
+# §3.8, work/uyf/reports/enemy_stats.tsv). scripts/enemy_table.py turns this into src/HoF2VR/Game/EnemyTableData.cs.
+# Columns: the model-name prefix (WeaponGrips.ModelKey, longest prefix wins), the UYF archetype, a note.
+# Archetypes (UYF Normal): lesserhusk (guard 5), husk (50), spellsword (40, agile and ranged), elitespellsword (65),
+# knight (100), eliteknight (150), captain (125), elitecaptain (175), horror (boss 150, 10 s refill delay), captainboss (150).
+# A boss (AIRef.Boss) without its own row is a horror; any other enemy without a row goes by its HoF2 class
+# (Basic husk, Advanced knight, Elite captain).
+#prefix	archetype	note
+ThievesThug	husk	the common thief: short blade, hops away
+ThievesAssassin	spellsword	agile, lands behind the player
+ThievesPoison	spellsword	agile poisoner
+ThievesSilencer	spellsword	agile
+ThievesReaper	elitespellsword	the thieves' heavy duelist
+ThievesMolotov	spellsword	thrower (ranged)
+Thieves	husk	other thieves
+EmpireSoldier	knight	sword and shield trooper
+EmpireGuard	knight	trooper
+EmpirePhalanx	eliteknight	the shield turtle
+EmpireGeneral	captainboss	the general (boss)
+Empire	knight	other empire troops
+NorseWarrior	knight	axe and shield
+NorseBerserker	elitespellsword	dual axes, combos
+NorseTank	captain	armoured heavy
+NorseBolas	spellsword	bolas thrower (ranged)
+NorseShaman	elitespellsword	caster (ranged)
+Norse	knight	other Norse
+CorruptedMinion	husk	the corrupted rank and file
+CorruptedTank	captain	armoured slammer
+CorruptedJuggernaut	elitecaptain	the heaviest corrupted
+Corrupted	husk	other corrupted
+ShadowWarrior	knight	claws, lunges
+ShadowElder	captain	the shadow elder
+Shadow	knight	other shadows
+SkeletonKnight	knight	armoured skeleton
+Skeleton	husk	skeletons
+GoblinWarrior	husk	goblin with a shield
+GoblinRanged	spellsword	goblin archer
+GoblinArcher	spellsword	goblin archer
+GoblinLobber	spellsword	bomb lobber (ranged)
+GoblinThief	lesserhusk	nabbers: steal and flee
+GoblinNabber	lesserhusk	nabbers
+GoblinWitch	elitespellsword	caster
+Goblin	husk	other goblins
+Ogre	elitecaptain	the big brute (combos)
+TreantKnight	captain	armoured treant
+Treant	knight	treants
+Wraith	spellsword	ghosts
+Villager	lesserhusk	villagers
+Gnome	lesserhusk	gnomes
+SpecialBlackKnight	captainboss	the black knight
+Mage	elitespellsword	casters

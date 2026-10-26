@@ -1,0 +1,89 @@
+40 entries, 14.8 MB
+mesh mesh/Camp_Fire_WoodPile_A                   270 verts
+mesh mesh/Rock_Gen_Fire                          612 verts
+mesh mesh/Camp_Fire_AshPile_A                    134 verts
+mesh mesh/Marsh_Rock_Gen_sml_D                    47 verts
+mesh mesh/FallenTree                             759 verts
+mesh mesh/StumpSeat                              313 verts
+mesh mesh/grass_Gamba_01                         388 verts
+mesh mesh/plant_GroundFern_01                    312 verts
+mesh mesh/bush_revised_test                       95 verts
+mesh mesh/forest_tree_semi_circle_plane_lod       22 verts
+mesh mesh/Rock3_LP_smooth:polySurface1           481 verts
+tex  Camp_Fire_WoodBurnt_Albedo                256x256  fmt 10 mips  9    43704 bytes
+tex  Camp_Fire_AshPile_Emissive                128x128  fmt 10 mips  8    10936 bytes
+tex  Rock_Generic_A_Brown_Albedo               512x512  fmt 10 mips 10   174776 bytes
+tex  Camp_Fire_AshPile_Albedo                  512x512  fmt 12 mips 10   349552 bytes
+tex  FallenLog_Albedo                          512x512  fmt 10 mips 10   174776 bytes
+tex  StumpSeat_Albedo                          512x512  fmt 10 mips 10   174776 bytes
+tex  StumpSeatNoMossVar_Albedo                 512x512  fmt 10 mips 10   174776 bytes
+tex  Tropical_Foliage_Gamba_Albedo             512x512  fmt 12 mips 10   349552 bytes
+tex  Tropical_Foliage_Gamba_Albedo_Start_Scene  512x512  fmt 12 mips 10   349552 bytes
+tex  Tropical_Foliage_plant_GroundFern_01_Albedo  256x256  fmt 12 mips  9    87408 bytes
+tex  Bush_Revised_Marsh_Albedo                 512x512  fmt 12 mips 10   349552 bytes
+tex  Tree_Wall_Birch_Revised_Albedo_StartScene 1024x512  fmt 12 mips 11   699088 bytes
+tex  Tree_Wall_Birch_Revised_Emission          256x128  fmt 12 mips  9    43728 bytes
+tex  Rocks_Boulders_03_Albedo                  512x512  fmt 10 mips 10   174776 bytes
+tex  Ground_GrassDirt_Autumn_Albedo            512x512  fmt 10 mips 10   174776 bytes
+tex  Ground_LeavesAutumn_Yellow_Albedo         512x512  fmt 10 mips 10   174776 bytes
+tex  Ground_Mud_Dry_Albedo                     512x512  fmt 10 mips 10   174776 bytes
+tex  Ground_Mud_Albedo                         512x512  fmt 10 mips 10   174776 bytes
+tex  tex/ground_control                        512x512  fmt  5 mips 10  1398100 bytes
+tex  tex/ground_base                          2048x2048 fmt 10 mips 10  2796200 bytes
+tex  PFX_SEQ_fire_03                           512x512  fmt 10 mips 10   174776 bytes
+tex  PFX_SEQ_windy_fire_2048_01               1024x1024 fmt 10 mips 11   699064 bytes
+tex  vfx_glow_radial                            32x32   fmt  3 mips  6     4095 bytes
+tex  PFX_SEQ_cloud_smoke_04                    256x256  fmt 12 mips  9    87408 bytes
+tex  vfx_sparks_tiled_01                        64x64   fmt 10 mips  7     2744 bytes
+
+layout:
+prop Camp_Fire_WoodPile_A|emissive|mesh/Camp_Fire_WoodPile_A|Camp_Fire_WoodBurnt_Albedo|Camp_Fire_AshPile_Emissive|0.0540 0.0000 -0.0465|-0.708 -0.070 -0.049 0.701|0.677 0.677 0.677|1.000 1.000|1.000 1.000 1.000 1.500
+prop Rock_Gen_Fire|opaque|mesh/Rock_Gen_Fire|Rock_Generic_A_Brown_Albedo|-|0.0540 0.0000 -0.0465|-0.708 -0.070 -0.049 0.701|0.677 0.677 0.677|1.000 1.000|1.000 1.000 1.000 0.000
+prop Camp_Fire_AshPile_A|cutout_emissive|mesh/Camp_Fire_AshPile_A|Camp_Fire_AshPile_Albedo|Camp_Fire_AshPile_Emissive|0.0540 0.0000 -0.0465|-0.708 -0.070 -0.049 0.701|0.677 0.677 0.677|1.000 1.000|1.000 1.000 1.000 1.495
+prop Marsh_Rock_Gen_sml_D|opaque|mesh/Marsh_Rock_Gen_sml_D|Rock_Generic_A_Brown_Albedo|-|0.7401 0.0090 -0.0828|-0.554 -0.440 -0.440 0.554|0.289 0.289 0.289|1.000 1.000|1.000 1.000 1.000 0.000
+prop Marsh_Rock_Gen_sml_D (1)|opaque|mesh/Marsh_Rock_Gen_sml_D|Rock_Generic_A_Brown_Albedo|-|0.7991 -0.0260 0.1452|0.110 0.701 -0.675 0.199|0.183 0.183 0.183|1.000 1.000|1.000 1.000 1.000 0.000
+prop Marsh_Rock_Gen_sml_D (2)|opaque|mesh/Marsh_Rock_Gen_sml_D|Rock_Generic_A_Brown_Albedo|-|0.1571 -0.0121 -0.7578|0.279 0.627 -0.625 0.372|0.183 0.183 0.183|1.000 1.000|1.000 1.000 1.000 0.000
+prop Marsh_Rock_Gen_sml_D (3)|opaque|mesh/Marsh_Rock_Gen_sml_D|Rock_Generic_A_Brown_Albedo|-|-0.7019 0.0230 -0.2338|0.670 -0.227 -0.227 -0.670|0.289 0.289 0.289|1.000 1.000|1.000 1.000 1.000 0.000
+prop Marsh_Rock_Gen_sml_D (4)|opaque|mesh/Marsh_Rock_Gen_sml_D|Rock_Generic_A_Brown_Albedo|-|-0.6469 -0.0220 -0.4168|0.110 0.701 -0.675 0.199|0.183 0.183 0.183|1.000 1.000|1.000 1.000 1.000 0.000
+prop Marsh_Rock_Gen_sml_D (5)|opaque|mesh/Marsh_Rock_Gen_sml_D|Rock_Generic_A_Brown_Albedo|-|0.8881 -0.0050 -1.1118|0.034 0.657 -0.708 0.256|0.183 0.183 0.183|1.000 1.000|1.000 1.000 1.000 0.000
+prop Marsh_Rock_Gen_sml_D (6)|opaque|mesh/Marsh_Rock_Gen_sml_D|Rock_Generic_A_Brown_Albedo|-|0.6271 -0.0590 -1.1098|0.289 -0.663 0.680 0.120|0.289 0.289 0.289|1.000 1.000|1.000 1.000 1.000 0.000
+prop FallenLog|opaque|mesh/FallenTree|FallenLog_Albedo|-|0.2329 0.1006 1.5228|0.001 0.963 -0.033 -0.266|2.673 2.673 2.673|1.000 1.000|1.000 1.000 1.000 0.000
+prop StumpSeat|opaque|mesh/StumpSeat|StumpSeat_Albedo|-|-1.1091 -0.0824 -2.3092|0.000 0.000 0.000 1.000|1.500 1.500 1.500|1.000 1.000|1.000 1.000 1.000 0.000
+prop StumpSeat (1)|opaque|mesh/StumpSeat|StumpSeat_Albedo|-|-1.3301 -0.1134 1.0528|0.000 0.983 0.000 0.183|1.601 1.601 1.601|1.000 1.000|1.000 1.000 1.000 0.000
+prop StumpSeatNoMoss|opaque|mesh/StumpSeat|StumpSeatNoMossVar_Albedo|-|-1.5801 -0.1604 -0.7102|-0.056 -0.617 -0.031 0.784|1.500 2.125 1.500|1.000 1.000|1.000 1.000 1.000 0.000
+prop StumpSeatNoMoss (1)|opaque|mesh/StumpSeat|StumpSeatNoMossVar_Albedo|-|1.2599 -0.0734 -0.9502|0.000 0.000 0.000 1.000|1.403 1.403 1.403|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (20)|opaque|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo|-|-1.2931 -0.0624 -1.8062|-0.032 0.100 0.020 0.994|0.111 0.111 0.111|1.000 1.000|0.765 0.709 0.478 0.000
+prop grass_Gamba_green (12)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|2.9099 0.0126 0.7498|-0.207 -0.275 -0.048 0.938|0.240 0.240 0.240|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (13)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|1.4229 0.2746 1.6428|-0.038 0.097 0.078 0.991|0.327 0.230 0.327|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (16)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|-0.7541 0.0217 3.0928|-0.038 0.097 0.078 0.991|0.240 0.240 0.240|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (19)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|-1.7181 0.0526 -0.1412|-0.032 0.100 0.020 0.994|0.125 0.125 0.125|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (20)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|4.6184 0.3269 2.4111|-0.045 0.094 0.003 0.995|0.240 0.240 0.240|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (21)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo|-|-0.9061 -0.3814 -3.8922|-0.032 0.100 0.020 0.994|0.210 0.210 0.210|1.000 1.000|0.765 0.709 0.478 0.000
+prop grass_Gamba_green (26)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|2.2549 -0.0714 -0.2612|-0.057 -0.311 0.150 0.937|0.130 0.130 0.130|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (27)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|2.4829 -0.2964 -3.9202|0.002 0.094 0.082 0.992|0.240 0.240 0.240|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (29)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|4.0319 0.1756 1.2438|-0.188 -0.061 -0.088 0.976|0.136 0.136 0.136|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (30)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|9.8819 0.0916 1.3368|-0.164 0.147 0.141 0.965|0.170 0.170 0.170|1.000 1.000|1.000 1.000 1.000 0.000
+prop grass_Gamba_green (32)|foliage|mesh/grass_Gamba_01|Tropical_Foliage_Gamba_Albedo_Start_Scene|-|11.2969 -0.0244 0.8058|-0.186 0.235 0.167 0.939|0.240 0.240 0.240|1.000 1.000|1.000 1.000 1.000 0.000
+prop plant_GroundFern_01|foliage|mesh/plant_GroundFern_01|Tropical_Foliage_plant_GroundFern_01_Albedo|-|-2.5991 0.1626 -1.7942|0.005 0.213 -0.036 0.976|0.636 0.636 0.636|1.000 1.000|0.845 0.919 0.916 0.000
+prop plant_GroundFern_01 (1)|foliage|mesh/plant_GroundFern_01|Tropical_Foliage_plant_GroundFern_01_Albedo|-|4.2339 0.1326 0.4898|-0.154 -0.791 0.302 0.509|0.449 0.449 0.449|1.000 1.000|0.845 0.919 0.916 0.000
+prop bush_revised_test|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|3.0430 0.0509 2.2890|0.932 -0.086 -0.313 -0.160|0.556 0.556 1.436|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (1)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|-0.6130 0.4089 4.3180|0.295 0.323 -0.054 -0.897|0.556 0.556 1.436|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (10)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|8.3700 0.2369 11.6000|-0.160 0.777 0.596 0.120|0.714 0.714 0.714|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (2)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|-5.4600 0.3369 5.2660|-0.145 0.917 0.265 0.260|0.300 0.300 0.776|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (3)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|-7.9540 0.0709 5.0570|-0.145 0.917 0.265 0.260|0.473 0.473 1.222|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (4)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|-5.5800 0.0879 8.3710|-0.119 0.426 0.566 0.696|0.346 0.346 0.895|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (5)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|-2.0910 0.0369 9.6140|0.898 0.005 -0.269 -0.348|0.766 0.766 1.981|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (7)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|11.5216 0.7839 1.5400|-0.572 0.683 0.376 -0.255|0.494 0.494 0.494|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (8)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|4.2400 0.9849 -5.7690|-0.233 0.545 0.741 -0.316|0.494 0.494 0.494|3.000 3.000|0.556 0.713 0.707 0.000
+prop bush_revised_test (9)|foliage|mesh/bush_revised_test|Bush_Revised_Marsh_Albedo|-|9.4400 0.7419 4.1700|-0.224 0.764 0.601 0.065|0.714 0.714 0.714|3.000 3.000|0.556 0.713 0.707 0.000
+prop forest_tree_semi_circle_plane_lod|backdrop|mesh/forest_tree_semi_circle_plane_lod|Tree_Wall_Birch_Revised_Albedo_StartScene|Tree_Wall_Birch_Revised_Emission|-1.0800 2.1779 10.5600|-0.632 -0.317 -0.317 0.632|0.108 0.108 0.108|1.000 1.000|0.387 0.425 0.537 0.100
+prop forest_tree_semi_circle_plane_lod (1)|backdrop|mesh/forest_tree_semi_circle_plane_lod|Tree_Wall_Birch_Revised_Albedo_StartScene|Tree_Wall_Birch_Revised_Emission|-7.5330 2.1779 6.0790|-0.332 -0.624 -0.624 0.332|0.108 0.108 0.108|1.000 1.000|0.387 0.425 0.537 0.100
+prop Rock3|opaque|mesh/Rock3_LP_smooth:polySurface1|Rocks_Boulders_03_Albedo|-|2.5600 1.6669 5.8310|0.090 0.449 -0.026 -0.888|0.588 0.588 0.588|1.000 1.000|0.532 0.541 0.544 0.000
+prop Rock3 (6)|opaque|mesh/Rock3_LP_smooth:polySurface1|Rocks_Boulders_03_Albedo|-|-9.0000 1.6169 0.2900|-0.022 0.230 0.062 -0.971|0.588 0.588 0.588|1.000 1.000|0.532 0.541 0.544 0.000
+prop Rock3 (7)|opaque|mesh/Rock3_LP_smooth:polySurface1|Rocks_Boulders_03_Albedo|-|-5.1250 0.1069 3.6320|0.009 0.144 0.376 -0.916|0.276 0.276 0.276|1.000 1.000|0.532 0.541 0.544 0.000
+prop Rock3 (8)|opaque|mesh/Rock3_LP_smooth:polySurface1|Rocks_Boulders_03_Albedo|-|-7.0520 0.6369 2.8540|0.009 0.144 0.376 -0.916|0.232 0.232 0.232|1.000 1.000|0.532 0.541 0.544 0.000
+ground mesh/ground|tex/ground_base|tex/ground_control|Ground_GrassDirt_Autumn_Albedo 15.000 15.000|Ground_LeavesAutumn_Yellow_Albedo 7.500 7.500|Ground_Mud_Dry_Albedo 10.000 10.000|Ground_Mud_Albedo 15.000 15.000
+titlecam 1.4485 1.1457 -6.5969 -13.58
+spot boot 1.4485 0.5387 -6.5969 -13.58
+spot near 0.9008 -0.1731 -4.1023 -12.38
+firelight 1.00 0.56 0.10 2.5 2.0 2.6 5.0
