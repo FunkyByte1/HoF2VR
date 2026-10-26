@@ -2,6 +2,11 @@
 
 A from-scratch VR mod for the native Linux version of **Hand of Fate 2**, built as a BepInEx 5 plugin.
 
+> [!WARNING]
+> **Vibe-coded.** This mod was written almost entirely by an AI (Claude, by Anthropic). The author describes what
+> they want and playtests it in the headset, but does not review the code line by line. Expect bugs and rough
+> edges, read the scripts before you run them, and back up your saves first. Use at your own risk.
+
 - You sit or stand at the Dealer's table in first person and play the cards with your hands.
 - Fights are first person, with motion-controlled sword and shield.
 - You are never moved without your own input: places change with a short fade, and every view is set to your own
@@ -47,6 +52,4 @@ from Until You Fall are included.
 ## Notes
 
 - Not affiliated with or endorsed by Defiant Development. No game files are included: you need your own copy.
-- Most of the code was written by Claude (Anthropic's AI model) under the author's direction; the commit messages say
-  so.
 - Licence: MIT, see [LICENSE](LICENSE). Third-party files keep their own licences.
